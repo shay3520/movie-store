@@ -1,15 +1,11 @@
 import { useState } from "react";
 import MovieCard from "./components/MovieCard";
+import Home from "./pages/Home";
 
 function App() {
-  const display = true;
   return (
     <>
-      {display ? (
-        <MovieCard movie={{ title: "shay", release_date: "2024" }} />
-      ) : (
-        <MovieCard movie={{ title: "shay", release_date: "2020" }} />
-      )}
+      <Home />
     </>
   );
 }
